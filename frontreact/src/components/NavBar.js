@@ -6,9 +6,11 @@ import { I18nSelect } from './I18nSelect';
 export const NavBar = ({ onSearchKeyChange, setLanguage }) => {
   const [navState, setNavState] = useState({ showingSearch: false });
 
+
   const showSearchContainer = (event) => {
     event.preventDefault();
     setNavState({ showingSearch: !navState.showingSearch });
+    onSearchKeyChange('')
   };
 
   return (
@@ -19,17 +21,17 @@ export const NavBar = ({ onSearchKeyChange, setLanguage }) => {
           <nav className='menu-items'>
             <div className='menu-links'>
               <Link className='nav-item' aria-current='page' to='/'>
-                Home
+                <FormattedMessage id='home'/>
               </Link>
               <Link className='nav-item' aria-current='page' to='/report'>
-                Report
+              <FormattedMessage id='report'/>
               </Link>
             </div>
             <div className='menu-actions'>
               <span onClick={(e) => showSearchContainer(e)}>
                 <i className='material-icons search'>search</i>
               </span>
-              <I18nSelect></I18nSelect>
+              <I18nSelect setLanguage={setLanguage}></I18nSelect>
             </div>
           </nav>
         </div>

@@ -1,0 +1,248 @@
+/**
+ * The menu is technically the header of the site, it contains the styles for the drop down of the Search Bar.
+ *
+ */
+header.menu {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+header.menu div.menu-container {
+  width: 100%;
+  background-color: #040a2b;
+  padding: 0 20px;
+  text-align: left;
+  min-height: 4.375rem;
+}
+
+header.menu div.menu-container div.menu-holder {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+}
+
+header.menu div.menu-container h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+  text-align: left;
+  display: inline-block;
+}
+
+header.menu div.menu-container .menu-items {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+header.menu div.menu-container .menu-items i {
+  color: white;
+  font-size: 2.8125rem;
+}
+
+header.menu div.menu-container .menu-items a.nav-item {
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid transparent;
+  color: #fff;
+}
+
+header.menu div.menu-container .menu-items .menu-links,
+header.menu div.menu-container .menu-items .menu-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.menu div.search-container {
+  position: absolute;
+  background-color: white;
+  z-index: 20;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  display: none;
+}
+
+header.menu div.search-container.showing {
+  display: block;
+}
+
+header.menu div.search-container input[type='text'] {
+  min-width: 100%;
+  font-size: 36px;
+  line-height: 50px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+header.menu div.search-container i.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.i18n-selector {
+  padding: 0.25rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18rem;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 1px solid #adadad;
+}
+
+.card.inactive {
+  -webkit-filter: brightness(0.8) saturate(0) contrast(1.5) blur(1px);
+          filter: brightness(0.8) saturate(0) contrast(1.5) blur(1px);
+  cursor: not-allowed;
+}
+
+.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-favorite {
+  cursor: pointer;
+}
+
+.card-img {
+  height: 21.875rem;
+  max-width: 10.9375rem;
+}
+
+.card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 1rem 0.25rem 0.5rem 0;
+}
+
+.card-bottom .price {
+  font-size: 1.5rem;
+}
+
+.home-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.report-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+/*# sourceMappingURL=index.css.map */

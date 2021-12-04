@@ -1,4 +1,4 @@
-.card {
+.card {  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   border-radius: 1rem;
   cursor: pointer;
   border: 1px solid $isis3710-grey-10;
-
+ 
   &.inactive {
     filter: brightness(0.8) saturate(0) contrast(1.5) blur(1px);
     cursor: not-allowed;
@@ -46,5 +46,5 @@
     .price {
       font-size: 1.5rem;
     }
-  }
+  } 
 }
